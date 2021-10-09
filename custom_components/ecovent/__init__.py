@@ -20,7 +20,7 @@ CONFIG_SCHEMA = vol.Schema({
 
 async def async_setup(hass, config):
     """Set up the Ecovent Fan component."""
-    from ecovent import Fan
+    from ecovent2 import Fan
 
     if ECOVENT_DEVICES not in hass.data:
         hass.data[ECOVENT_DEVICES] = []
