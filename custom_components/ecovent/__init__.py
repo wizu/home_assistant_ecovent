@@ -36,7 +36,7 @@ async def async_setup(hass, config):
         else:
             port = device.get(CONF_PORT)
 
-        fan = Fan(ip_address, name, port)
+        fan = Fan(ip_address, "1111", "DEFAULT_DEVICEID", name, port)
         hass.data[ECOVENT_DEVICES].append(fan)
 
     hass.async_create_task(
