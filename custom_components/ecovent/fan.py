@@ -180,7 +180,7 @@ class EcoventFan(FanEntity):
         fan_speed = SPEED_TO_INT[speed]
         self._fan.set_speed(fan_speed)
 
-    def set_percentage(self, percentage: int) -> None:
+    def set_percentage2(self, percentage: int) -> None:
         if percentage == 1:
             percentage = 2
 
