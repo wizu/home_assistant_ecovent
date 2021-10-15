@@ -102,6 +102,7 @@ class EcoventFan(FanEntity):
         self._fan_state = self._fan.state
         self._fan_speed = self._fan.speed
         self._fan_airflow = self._fan.airflow
+        self._fan_percentage = self._fan.man_speed
 
     @property
     def name(self):
@@ -178,6 +179,12 @@ class EcoventFan(FanEntity):
         """Set the speed of the fan."""
         fan_speed = SPEED_TO_INT[speed]
         self._fan.set_speed(fan_speed)
+
+    def set_percentage(self, percentage: int) -> None:
+        if percentage == 1:
+            percentage = 2
+
+        self._fan.set_man_speed(percentage)
 
     def set_airflow(self, airflow: int) -> None:
         self._fan.set_airflow(airflow)
