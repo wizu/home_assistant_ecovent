@@ -1,9 +1,9 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.6",
   "domain": "ecovent",
   "name": "EcoVent",
   "documentation": "https://github.com/aglehmann/pyEcovent",
   "dependencies": [],
   "codeowners": ["@aglehmann"],
-  "requirements": ["git+https://github.com/gody01/pyEcovent@master#pyEcovent==0.9.2"]
+  "requirements": ["git+https://github.com/wizu/pyEcovent@master#pyEcovent==0.19.2"]
 }
