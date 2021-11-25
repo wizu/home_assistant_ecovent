@@ -5,5 +5,5 @@
   "documentation": "https://github.com/aglehmann/pyEcovent",
   "dependencies": [],
   "codeowners": ["@aglehmann"],
-  "requirements": ["git+https://github.com/wizu/pyEcovent@master#pyEcovent==0.19.2"]
+  "requirements": ["git+https://github.com/wizu/pyEcovent@master#pyEcovent==0.19.3"]
 }
